@@ -1,0 +1,125 @@
+
+
+/* mobile first 
+
+paleta cores 
+    verde: #49a09d
+    lilas: #5f2c82
+*/
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#login{
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    overflow: hidden; /* ao colocar a foto as pontas viram quadradas, para colocar redondo faz-se isto. t(udo que estiver fora da borda fica escondido) */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.876);
+    
+    transition-timing-function: ease;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:  width 0.3s, height 0.3s;
+}
+#imagem{
+    display: block;
+    background-image: url('../imagens/metal.jpg');
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+#formulario{
+    display: block;
+    padding: 10px ;
+}
+#formulario >h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario>p{
+    font-size: 0.8em;
+}
+.campo{
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+.campo>span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+.campo> input{
+    background-color: #49a09D;
+    font-size: 1em;
+    width: calc(100%-44px);
+    height: 100%;
+
+    border: 0px;
+    border-radius: 8px;
+    padding: 8px;
+    transform: translateY(-10px);     /*translate so para cima */
+}
+.campo> input:focus-within{       /* quando clicar-mos na caixa para escrever ela vira branca*/
+    background-color: white;
+}
+form >input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form >input[type=submit]:hover{
+    background-color: #2d6462;
+}
+form>a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #6cd3cf;
+    color: #2D6462;
+    border: 1px solid #49a09d;
+    border-radius: 7px;
+    text-decoration: none;
+
+}
+form>a.botao:hover{
+    background-color: #6cd3cf;
+}
+form> a.botao >span{
+    font-size: 0.8em;
+}
+
+
