@@ -50,5 +50,17 @@
     #formulario>p{
         font-size: 1.2em;
     }
+    footer{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+    
+    } 
+    
+    #logo-footer{
+        width: 250px;
+    }
 }
 

@@ -18,8 +18,15 @@ body, html{
     height: 100vh;
     width: 100vw;
 }
+#logo-header{
+    width: 150px;
+    border-radius: 60px;
+    height: 60px;
+    display: flex;
+    margin: 20px;
+}
 main{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     position: relative;
 }
@@ -121,5 +128,19 @@ form>a.botao:hover{
 form> a.botao >span{
     font-size: 0.8em;
 }
+footer{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
 
+} 
+
+#logo-footer{
+    width: 200px;
+}
 
